@@ -4,7 +4,6 @@
 project initialization configuration
 
 ```bash
-  cd services
   docker-compose up -d
   yarn
   yarn dev
