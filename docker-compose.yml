@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: steplix-chanllenger
+    environment:
+      MYSQL_USER: 'steplix'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_DATABASE: 'steplix-db'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/steplix-chanllenger/service/data:/var/lib/mysql
