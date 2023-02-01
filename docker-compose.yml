@@ -12,4 +12,4 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ~/steplix-chanllenger/service/data:/var/lib/mysql
+      - ~/steplix-chanllenger/data:/var/lib/mysql
